@@ -11,7 +11,7 @@ export default function Home() {
           </span>
 
           <h1 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            Heaven Retreat Spa
+            Aqua Spa
           </h1>
 
           <p className="mt-6 text-gray-600 text-lg leading-relaxed max-w-xl">
@@ -29,7 +29,7 @@ export default function Home() {
             </Link>
 
             <a
-              href="tel:9217068916 "
+              href="tel:8882020308 "
               className="border-2 border-pink-600 text-pink-600 px-7 py-3 rounded-md font-bold hover:bg-pink-600 hover:text-white transition"
             >
               Call Now

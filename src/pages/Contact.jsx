@@ -17,34 +17,35 @@ export default function Contact() {
           <div className="space-y-5 text-gray-800">
             <div>
               <p className="font-semibold">Business Name</p>
-              <p>HEAVEN RETREAT SPA</p>
+              <p>Aqua Spa</p>
             </div>
 
             <div>
               <p className="font-semibold">Phone</p>
               <a
-                href="tel:9217068916"
+                href="tel:8882020308"
                 className="text-pink-600 hover:underline"
               >
-                9217068916
+                8882020308
               </a>
             </div>
 
             <div>
               <p className="font-semibold">Email</p>
               <a
-                href="mailto:rtheaven76@gmail.com"
+                href="mailto:aquaspapaschimvihareast@gmail.com"
                 className="text-pink-600 hover:underline"
               >
-                rtheaven76@gmail.com
+                aquaspapaschimvihareast@gmail.com
               </a>
             </div>
 
             <div>
               <p className="font-semibold">Address</p>
               <p>
-                Shop No - 19, LG <br />
-                Noida Sector 76
+                First Floor, 84, Opp. Metro Pillar Number 224,
+Avtar Enclave,  <br />
+                Paschim Vihar, Delhi, 110063
               </p>
             </div>
           </div>

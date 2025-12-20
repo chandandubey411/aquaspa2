@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
-// slug helper
+/* slug helper */
 const makeSlug = (text) =>
   text
     .toLowerCase()
@@ -18,9 +18,9 @@ export default function Navbar() {
   const [mobileAccordion, setMobileAccordion] = useState(null);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
@@ -32,19 +32,37 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link to="/">
-          <img src={logo} alt="Heaven Retreat Spa" className="h-12" />
+        {/* ================= LOGO ================= */}
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="h-14 w-14 flex items-center justify-center rounded-full bg-black shadow-lg ring-1 ring-[#d4af37]/70 transition group-hover:scale-105">
+            <img
+              src={logo}
+              alt="Aqua Spa"
+              className="h-10 w-10 object-contain"
+            />
+          </div>
+
+          <div className="hidden sm:block leading-tight">
+            <p className="text-lg font-serif tracking-wide text-[#d4af37]">
+              AQUA SPA
+            </p>
+            <p className="text-[11px] uppercase tracking-[0.25em] text-gray-500">
+              Luxury Wellness
+            </p>
+          </div>
         </Link>
 
-        {/* Desktop Menu */}
+        {/* ================= DESKTOP MENU ================= */}
         <nav className="hidden lg:flex items-center gap-8 font-medium text-gray-800">
-          <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
+          <Link to="/" className="hover:text-pink-600">Home</Link>
+          <Link to="/about" className="hover:text-pink-600">About Us</Link>
 
           <DesktopMenu
             label="Massage Services"
+            name="massage"
             basePath="/massage"
+            openMenu={openMenu}
+            setOpenMenu={setOpenMenu}
             items={[
               "Full Body Massage",
               "Thai Massage",
@@ -60,14 +78,14 @@ export default function Navbar() {
               "Aromatherapy Massage",
               "Nuru Massage",
             ]}
-            name="massage"
-            openMenu={openMenu}
-            setOpenMenu={setOpenMenu}
           />
 
           <DesktopMenu
             label="Spa Services"
+            name="spa"
             basePath="/spa"
+            openMenu={openMenu}
+            setOpenMenu={setOpenMenu}
             items={[
               "Chocolate Massage",
               "Swedish Massage",
@@ -83,42 +101,52 @@ export default function Navbar() {
               "Jacuzzi Milk Bath",
               "Signature Massage",
             ]}
-            name="spa"
-            openMenu={openMenu}
-            setOpenMenu={setOpenMenu}
           />
 
-          <a href="https://wa.me/919217068916 " target="_blank">
+          <a
+            href="https://wa.me/918882020308"
+            target="_blank"
+            className="hover:text-pink-600"
+          >
             WhatsApp
           </a>
-          <Link to="/contact">Contact Us</Link>
+
+          <Link to="/contact" className="hover:text-pink-600">
+            Contact Us
+          </Link>
         </nav>
 
-        {/* Mobile Button */}
+        {/* ================= CTA ================= */}
+        <Link
+          to="/appointment"
+          className="hidden lg:block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-md font-semibold transition"
+        >
+          Make Appointment
+        </Link>
+
+        {/* ================= MOBILE BUTTON ================= */}
         <button
           className="lg:hidden text-2xl"
           onClick={() => setMobileOpen(true)}
         >
           ☰
         </button>
-
-        {/* CTA */}
-        <Link
-          to="/appointment"
-          className="hidden lg:block bg-pink-600 text-white px-6 py-3 rounded-md font-semibold"
-        >
-          Make Appointment
-        </Link>
       </div>
 
       {/* ================= MOBILE DRAWER ================= */}
       {mobileOpen && (
         <div className="fixed inset-0 z-50 bg-black/70 lg:hidden">
           <div className="w-[85%] max-w-sm h-full bg-[#111] text-white overflow-y-auto">
-            
             {/* Header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-gray-700">
-              <img src={logo} alt="logo" className="h-10" />
+              <div className="flex items-center gap-3">
+                <div className="h-12 w-12 rounded-full bg-black flex items-center justify-center ring-1 ring-[#d4af37]">
+                  <img src={logo} alt="Aqua Spa" className="h-8 w-8" />
+                </div>
+                <span className="font-serif text-lg tracking-wide text-[#d4af37]">
+                  Aqua Spa
+                </span>
+              </div>
               <button
                 className="text-2xl"
                 onClick={() => setMobileOpen(false)}
@@ -132,7 +160,6 @@ export default function Navbar() {
               <MobileLink to="/" label="Home" setMobileOpen={setMobileOpen} />
               <MobileLink to="/about" label="About Us" setMobileOpen={setMobileOpen} />
 
-              {/* Massage Accordion */}
               <MobileAccordion
                 title="Massage Services"
                 open={mobileAccordion === "massage"}
@@ -160,7 +187,6 @@ export default function Navbar() {
                 setMobileOpen={setMobileOpen}
               />
 
-              {/* Spa Accordion */}
               <MobileAccordion
                 title="Spa Services"
                 open={mobileAccordion === "spa"}
@@ -189,7 +215,12 @@ export default function Navbar() {
               />
 
               <MobileLink to="/contact" label="Contact Us" setMobileOpen={setMobileOpen} />
-              <MobileLink to="/appointment" label="Make Appointment" highlight setMobileOpen={setMobileOpen} />
+              <MobileLink
+                to="/appointment"
+                label="Make Appointment"
+                highlight
+                setMobileOpen={setMobileOpen}
+              />
             </div>
           </div>
         </div>
@@ -206,7 +237,7 @@ function DesktopMenu({ label, items, name, openMenu, setOpenMenu, basePath }) {
       onMouseEnter={() => setOpenMenu(name)}
       onMouseLeave={() => setOpenMenu(null)}
     >
-      <button className="flex items-center gap-1 py-2">
+      <button className="flex items-center gap-1 py-2 hover:text-pink-600">
         {label}
         <span>{openMenu === name ? "−" : "+"}</span>
       </button>
@@ -246,7 +277,14 @@ function MobileLink({ to, label, setMobileOpen, highlight }) {
   );
 }
 
-function MobileAccordion({ title, open, onClick, items, basePath, setMobileOpen }) {
+function MobileAccordion({
+  title,
+  open,
+  onClick,
+  items,
+  basePath,
+  setMobileOpen,
+}) {
   return (
     <div>
       <button
