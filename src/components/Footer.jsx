@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1f2933] text-gray-300">
+    <footer className="bg-spaBlack-900 text-spaGray-300">
       <div className="max-w-7xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-4">
 
         {/* Brand */}
         <div>
-          <h2 className="text-xl font-bold text-white mb-4">
+          <h2 className="text-xl font-serif tracking-wide text-gold-500 mb-4">
             HEAVEN RETREAT SPA
           </h2>
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm leading-relaxed text-spaGray-400">
             Experience premium relaxation and rejuvenation with our professional
             spa and massage therapies in a calm, luxurious environment.
           </p>
@@ -18,19 +18,35 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+          <h3 className="text-gold-500 font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/" className="hover:text-pink-500">Home</Link></li>
-            <li><Link to="/about" className="hover:text-pink-500">About Us</Link></li>
-            <li><Link to="/appointment" className="hover:text-pink-500">Book Appointment</Link></li>
-            <li><Link to="/contact" className="hover:text-pink-500">Contact Us</Link></li>
+            <li>
+              <Link to="/" className="hover:text-gold-400 transition">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-gold-400 transition">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/appointment" className="hover:text-gold-400 transition">
+                Book Appointment
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-gold-400 transition">
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
 
         {/* Services */}
         <div>
-          <h3 className="text-white font-semibold mb-4">Services</h3>
-          <ul className="space-y-2 text-sm">
+          <h3 className="text-gold-500 font-semibold mb-4">Services</h3>
+          <ul className="space-y-2 text-sm text-spaGray-400">
             <li>Full Body Massage</li>
             <li>Thai Massage</li>
             <li>Couples Massage</li>
@@ -41,16 +57,24 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className="text-white font-semibold mb-4">Contact</h3>
-          <ul className="space-y-2 text-sm">
+          <h3 className="text-gold-500 font-semibold mb-4">Contact</h3>
+          <ul className="space-y-2 text-sm text-spaGray-400">
             <li>📍 Shop No - 19, LG, Noida Sector 76</li>
             <li>
-              📞 <a href="tel:9217068916" className="hover:text-pink-500">
+              📞{" "}
+              <a
+                href="tel:9217068916"
+                className="hover:text-gold-400 transition"
+              >
                 9217068916
               </a>
             </li>
             <li>
-              ✉️ <a href="mailto:rtheaven76@gmail.com" className="hover:text-pink-500">
+              ✉️{" "}
+              <a
+                href="mailto:rtheaven76@gmail.com"
+                className="hover:text-gold-400 transition break-all"
+              >
                 rtheaven76@gmail.com
               </a>
             </li>
@@ -59,8 +83,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700">
-        <div className="max-w-7xl mx-auto px-6 py-4 text-center text-sm text-gray-400">
+      <div className="border-t border-spaBlack-700">
+        <div className="max-w-7xl mx-auto px-6 py-4 text-center text-sm text-spaGray-500">
           © {new Date().getFullYear()} Heaven Retreat Spa. All rights reserved.
         </div>
       </div>

@@ -32,18 +32,14 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* ================= LOGO ================= */}
+        {/* LOGO */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="h-14 w-14 flex items-center justify-center rounded-full bg-black shadow-lg ring-1 ring-[#d4af37]/70 transition group-hover:scale-105">
-            <img
-              src={logo}
-              alt="Aqua Spa"
-              className="h-10 w-10 object-contain"
-            />
+          <div className="h-14 w-14 flex items-center justify-center rounded-full bg-black shadow-lg ring-1 ring-gold-500/70 transition group-hover:scale-105">
+            <img src={logo} alt="Aqua Spa" className="h-10 w-10" />
           </div>
 
           <div className="hidden sm:block leading-tight">
-            <p className="text-lg font-serif tracking-wide text-[#d4af37]">
+            <p className="text-lg font-serif tracking-wide text-gold-500">
               AQUA SPA
             </p>
             <p className="text-[11px] uppercase tracking-[0.25em] text-gray-500">
@@ -52,10 +48,10 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* ================= DESKTOP MENU ================= */}
+        {/* DESKTOP MENU */}
         <nav className="hidden lg:flex items-center gap-8 font-medium text-gray-800">
-          <Link to="/" className="hover:text-pink-600">Home</Link>
-          <Link to="/about" className="hover:text-pink-600">About Us</Link>
+          <Link to="/" className="hover:text-gold-500">Home</Link>
+          <Link to="/about" className="hover:text-gold-500">About Us</Link>
 
           <DesktopMenu
             label="Massage Services"
@@ -106,25 +102,25 @@ export default function Navbar() {
           <a
             href="https://wa.me/918882020308"
             target="_blank"
-            className="hover:text-pink-600"
+            className="hover:text-gold-500"
           >
             WhatsApp
           </a>
 
-          <Link to="/contact" className="hover:text-pink-600">
+          <Link to="/contact" className="hover:text-gold-500">
             Contact Us
           </Link>
         </nav>
 
-        {/* ================= CTA ================= */}
+        {/* CTA */}
         <Link
           to="/appointment"
-          className="hidden lg:block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-md font-semibold transition"
+          className="hidden lg:block bg-gold-500 hover:bg-gold-600 text-black px-6 py-3 rounded-md font-semibold transition shadow-gold"
         >
           Make Appointment
         </Link>
 
-        {/* ================= MOBILE BUTTON ================= */}
+        {/* MOBILE BUTTON */}
         <button
           className="lg:hidden text-2xl"
           onClick={() => setMobileOpen(true)}
@@ -133,29 +129,25 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* ================= MOBILE DRAWER ================= */}
+      {/* MOBILE DRAWER */}
       {mobileOpen && (
         <div className="fixed inset-0 z-50 bg-black/70 lg:hidden">
-          <div className="w-[85%] max-w-sm h-full bg-[#111] text-white overflow-y-auto">
+          <div className="w-[85%] max-w-sm h-full bg-spaBlack-800 text-white overflow-y-auto">
             {/* Header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-gray-700">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-full bg-black flex items-center justify-center ring-1 ring-[#d4af37]">
+                <div className="h-12 w-12 rounded-full bg-black flex items-center justify-center ring-1 ring-gold-500">
                   <img src={logo} alt="Aqua Spa" className="h-8 w-8" />
                 </div>
-                <span className="font-serif text-lg tracking-wide text-[#d4af37]">
+                <span className="font-serif text-lg tracking-wide text-gold-500">
                   Aqua Spa
                 </span>
               </div>
-              <button
-                className="text-2xl"
-                onClick={() => setMobileOpen(false)}
-              >
+              <button className="text-2xl" onClick={() => setMobileOpen(false)}>
                 ✕
               </button>
             </div>
 
-            {/* Links */}
             <div className="divide-y divide-gray-800">
               <MobileLink to="/" label="Home" setMobileOpen={setMobileOpen} />
               <MobileLink to="/about" label="About Us" setMobileOpen={setMobileOpen} />
@@ -214,7 +206,6 @@ export default function Navbar() {
                 setMobileOpen={setMobileOpen}
               />
 
-              <MobileLink to="/contact" label="Contact Us" setMobileOpen={setMobileOpen} />
               <MobileLink
                 to="/appointment"
                 label="Make Appointment"
@@ -229,7 +220,7 @@ export default function Navbar() {
   );
 }
 
-/* ================= DESKTOP DROPDOWN ================= */
+/* DESKTOP DROPDOWN */
 function DesktopMenu({ label, items, name, openMenu, setOpenMenu, basePath }) {
   return (
     <div
@@ -237,7 +228,7 @@ function DesktopMenu({ label, items, name, openMenu, setOpenMenu, basePath }) {
       onMouseEnter={() => setOpenMenu(name)}
       onMouseLeave={() => setOpenMenu(null)}
     >
-      <button className="flex items-center gap-1 py-2 hover:text-pink-600">
+      <button className="flex items-center gap-1 py-2 hover:text-gold-500">
         {label}
         <span>{openMenu === name ? "−" : "+"}</span>
       </button>
@@ -250,7 +241,7 @@ function DesktopMenu({ label, items, name, openMenu, setOpenMenu, basePath }) {
               <Link
                 key={item}
                 to={`${basePath}/${makeSlug(item)}`}
-                className="block px-5 py-3 text-sm hover:bg-pink-600 hover:text-white border-b last:border-0"
+                className="block px-5 py-3 text-sm hover:bg-gold-500 hover:text-black border-b last:border-0"
               >
                 {item}
               </Link>
@@ -262,14 +253,16 @@ function DesktopMenu({ label, items, name, openMenu, setOpenMenu, basePath }) {
   );
 }
 
-/* ================= MOBILE COMPONENTS ================= */
+/* MOBILE */
 function MobileLink({ to, label, setMobileOpen, highlight }) {
   return (
     <Link
       to={to}
       onClick={() => setMobileOpen(false)}
       className={`block px-5 py-4 font-semibold ${
-        highlight ? "bg-pink-600 text-white" : "hover:bg-gray-800"
+        highlight
+          ? "bg-gold-500 text-black"
+          : "hover:bg-spaBlack-700"
       }`}
     >
       {label}
@@ -277,20 +270,13 @@ function MobileLink({ to, label, setMobileOpen, highlight }) {
   );
 }
 
-function MobileAccordion({
-  title,
-  open,
-  onClick,
-  items,
-  basePath,
-  setMobileOpen,
-}) {
+function MobileAccordion({ title, open, onClick, items, basePath, setMobileOpen }) {
   return (
     <div>
       <button
         onClick={onClick}
         className={`w-full flex justify-between items-center px-5 py-4 font-semibold ${
-          open ? "bg-[#d4af37] text-black" : "hover:bg-gray-800"
+          open ? "bg-gold-500 text-black" : "hover:bg-spaBlack-700"
         }`}
       >
         {title}
@@ -298,13 +284,13 @@ function MobileAccordion({
       </button>
 
       {open && (
-        <div className="bg-[#1a1a1a]">
+        <div className="bg-spaBlack-700">
           {items.map((item) => (
             <Link
               key={item}
               to={`${basePath}/${makeSlug(item)}`}
               onClick={() => setMobileOpen(false)}
-              className="block px-7 py-3 text-sm text-gray-200 hover:bg-gray-700"
+              className="block px-7 py-3 text-sm hover:bg-spaBlack-800"
             >
               {item}
             </Link>

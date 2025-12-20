@@ -7,7 +7,7 @@
     "price": "₹3999 Onwards",
     "benefits": ["Stress relief", "Muscle relaxation", "Improved circulation"],
     "coverImage": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80",
-    "gallery": ["/girls/girl1.jpg", "/girls/girl2.jpg", "/girls/girl3.jpg"]
+    "gallery": ["/girls/girl1.jpg", "/girls/girl2.jpg", "/girls/girl3.jpg", "/girls/girl10.jpg"]
   },
 
   {
@@ -18,7 +18,7 @@
     "price": "₹4499 Onwards",
     "benefits": ["Flexibility", "Energy boost", "Stress reduction"],
     "coverImage": "https://cdn.powerofpositivity.com/wp-content/uploads/2020/08/Massage-Therapists-Explain-How-Thai-Massage-Helps-Reduce-Pain.jpg",
-    "gallery": ["/girls/girl4.jpg", "/girls/girl5.jpg", "/girls/girl6.jpg"]
+    "gallery": ["/girls/girl4.jpg", "/girls/girl5.jpg", "/girls/girl6.jpg ", "/girls/girls11.jpeg"]
   },
 
   {
@@ -29,7 +29,7 @@
     "price": "₹5999 Onwards",
     "benefits": ["Bonding", "Relaxation", "Stress relief"],
     "coverImage": "https://smb.ibsrv.net/imageresizer/image/article_manager/1200x1200/26233/127509/heroimage0.774931001563386131.jpg",
-    "gallery": ["/girls/girl7.jpg", "/girls/girl8.jpg", "/girls/girl9.jpg"]
+    "gallery": ["/girls/girl7.jpg", "/girls/girl8.jpg", "/girls/girl9.jpg", "/girls/girls12.jpeg"]
   },
 
   {
@@ -40,7 +40,7 @@
     "price": "₹3499 Onwards",
     "benefits": ["Relaxation", "Better sleep", "Reduced tension"],
     "coverImage": "https://images.fresha.com/lead-images/placeholders/massage-103.jpg",
-    "gallery": ["/girls/girl1.jpg", "/girls/girl4.jpg", "/girls/girl7.jpg"]
+    "gallery": ["/girls/girl1.jpg", "/girls/girl4.jpg", "/girls/girl7.jpg" , "/girls/girls13.jpeg"]
   },
 
   {
@@ -51,7 +51,7 @@
     "price": "₹4499 Onwards",
     "benefits": ["Deep relaxation", "Stress relief", "Mind-body balance"],
     "coverImage": "http://goahappyendingspa.in/wp-content/uploads/2023/03/slider-4-1024x681.jpg",
-    "gallery": ["/girls/girl2.jpg", "/girls/girl5.jpg", "/girls/girl8.jpg"]
+    "gallery": ["/girls/girl2.jpg", "/girls/girl5.jpg", "/girls/girl8.jpg", "/girls/girls14.jpeg"]
   },
 
   {
@@ -62,7 +62,7 @@
     "price": "₹6999 Onwards",
     "benefits": ["Luxury relaxation", "Muscle relief", "Premium experience"],
     "coverImage": "https://framerusercontent.com/images/IdOWBEkW1CS19VxarrDu2uSxUdk.jpeg",
-    "gallery": ["/girls/girl3.jpg", "/girls/girl6.jpg", "/girls/girl9.jpg"]
+    "gallery": ["/girls/girl3.jpg", "/girls/girl6.jpg", "/girls/girl9.jpg", "/girls/girls15.jpeg"]
   },
 
   {
@@ -73,7 +73,7 @@
     "price": "₹4999 Onwards",
     "benefits": ["Deep muscle relaxation", "Stress relief", "Better circulation"],
     "coverImage": "https://tse3.mm.bing.net/th/id/OIP.G0evWgRvSNtZp2CLvSarFAHaFj?pid=Api&P=0&h=220",
-    "gallery": ["/girls/girl1.jpg", "/girls/girl5.jpg", "/girls/girl9.jpg"]
+    "gallery": ["/girls/girl1.jpg", "/girls/girl5.jpg", "/girls/girl9.jpg", "/girls/girls16.jpeg"]
   },
 
   {
@@ -84,7 +84,7 @@
     "price": "₹5499 Onwards",
     "benefits": ["Stress relief", "Relaxation", "Mood enhancement"],
     "coverImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    "gallery": ["/girls/girl2.jpg", "/girls/girl6.jpg", "/girls/girl8.jpg"]
+    "gallery": ["/girls/girl2.jpg", "/girls/girl6.jpg", "/girls/girl8.jpg", "/girls/girls17.jpeg"]
   },
 
   {
@@ -95,7 +95,7 @@
     "price": "₹4799 Onwards",
     "benefits": ["Pain relief", "Muscle relaxation", "Stress reduction"],
     "coverImage": "https://tse1.mm.bing.net/th/id/OIP.sNhkiH_cQI8r2OfDpfZBYAHaE8?pid=Api&P=0&h=220",
-    "gallery": ["/girls/girl3.jpg", "/girls/girl4.jpg", "/girls/girl7.jpg"]
+    "gallery": ["/girls/girl3.jpg", "/girls/girl4.jpg", "/girls/girl7.jpg", "/girls/girls18.jpeg"]
   },
 
   {
@@ -106,7 +106,7 @@
     "price": "₹4599 Onwards",
     "benefits": ["Full relaxation", "Stress relief", "Energy boost"],
     "coverImage": "https://www.localserviceslist.com/wp-content/uploads/2023/12/massage-in-bangalore.webp",
-    "gallery": ["/girls/girl1.jpg", "/girls/girl6.jpg", "/girls/girl8.jpg"]
+    "gallery": ["/girls/girl1.jpg", "/girls/girl6.jpg", "/girls/girl8.jpg", "/girls/girls19.jpeg"]
   },
 
   {
@@ -117,7 +117,7 @@
     "price": "₹4899 Onwards",
     "benefits": ["Pain relief", "Muscle recovery", "Improved mobility"],
     "coverImage": "https://www.healthcure.co.nz/wp-content/uploads/2020/12/deep_tissue_massage.jpg",
-    "gallery": ["/girls/girl2.jpg", "/girls/girl4.jpg", "/girls/girl9.jpg"]
+    "gallery": ["/girls/girl2.jpg", "/girls/girl4.jpg", "/girls/girl9.jpg", "/girls/girls20.jpeg"]
   },
 
   {
@@ -128,7 +128,7 @@
     "price": "₹4299 Onwards",
     "benefits": ["Relaxation", "Better mood", "Stress relief"],
     "coverImage": "https://tse2.mm.bing.net/th/id/OIP.czlUXdRcYokxQhi07cqsWAHaE7?pid=Api&P=0&h=220",
-    "gallery": ["/girls/girl3.jpg", "/girls/girl5.jpg", "/girls/girl7.jpg"]
+    "gallery": ["/girls/girl3.jpg", "/girls/girl5.jpg", "/girls/girl7.jpg", "/girls/girls21.jpeg"]
   },
 
   {
@@ -139,6 +139,6 @@
     "price": "₹5999 Onwards",
     "benefits": ["Deep relaxation", "Stress relief", "Body rejuvenation"],
     "coverImage": "https://1.bp.blogspot.com/-9s4EPJmfOqI/VDf-pvr8NvI/AAAAAAAAgRE/ELzCeBB_5Jk/s1600/IMG_2026.JPG",
-    "gallery": ["/girls/girl4.jpg", "/girls/girl6.jpg", "/girls/girl8.jpg"]
+    "gallery": ["/girls/girl4.jpg", "/girls/girl6.jpg", "/girls/girl8.jpg", "/girls/girls22.jpeg"]
   }
 ]

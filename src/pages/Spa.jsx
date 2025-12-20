@@ -32,12 +32,16 @@ export default function Spa() {
             </p>
 
             <div className="mt-6 space-y-2 text-gray-700">
-              <p><b>Duration:</b> {spa.duration}</p>
-              <p><b>Price:</b> {spa.price}</p>
+              <p>
+                <b className="text-gold-600">Duration:</b> {spa.duration}
+              </p>
+              <p>
+                <b className="text-gold-600">Price:</b> {spa.price}
+              </p>
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-xl">
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-gold-100">
             <img
               src={spa.coverImage}
               alt={spa.title}
@@ -56,9 +60,10 @@ export default function Spa() {
             {spa.benefits.map((benefit, i) => (
               <li
                 key={i}
-                className="bg-white p-5 rounded-xl shadow text-gray-700"
+                className="bg-white p-5 rounded-xl shadow-sm border border-gold-100 text-gray-700 flex gap-2"
               >
-                ✔ {benefit}
+                <span className="text-gold-500 font-bold">✔</span>
+                <span>{benefit}</span>
               </li>
             ))}
           </ul>
@@ -74,7 +79,7 @@ export default function Spa() {
             {spa.gallery.map((img, i) => (
               <div
                 key={i}
-                className="rounded-xl overflow-hidden shadow hover:scale-105 transition"
+                className="rounded-xl overflow-hidden shadow-md border border-gold-100 hover:scale-105 transition duration-300"
               >
                 <img
                   src={img}

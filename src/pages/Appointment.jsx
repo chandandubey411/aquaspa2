@@ -14,7 +14,7 @@ export default function Appointment() {
         </div>
 
         {/* Form Card */}
-        <div className="bg-white rounded-xl shadow-lg p-8 md:p-10 max-w-3xl mx-auto">
+        <div className="bg-white rounded-xl shadow-lg p-8 md:p-10 max-w-3xl mx-auto border border-gold-100">
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
@@ -30,12 +30,12 @@ export default function Appointment() {
             <input
               type="hidden"
               name="subject"
-              value="New Appointment Request - Heaven Retreat Spa"
+              value="New Appointment Request - Aqua Spa"
             />
 
             {/* Name */}
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Full Name
               </label>
               <input
@@ -43,13 +43,13 @@ export default function Appointment() {
                 name="name"
                 required
                 placeholder="Your full name"
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
 
             {/* Phone */}
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Phone Number
               </label>
               <input
@@ -57,13 +57,13 @@ export default function Appointment() {
                 name="phone"
                 required
                 placeholder="Your phone number"
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Email
               </label>
               <input
@@ -71,19 +71,19 @@ export default function Appointment() {
                 name="email"
                 required
                 placeholder="Your email address"
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
 
             {/* Service */}
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Select Service
               </label>
               <select
                 name="service"
                 required
-                className="w-full border rounded-md px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full border rounded-md px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-gold-500"
               >
                 <option value="">Choose a service</option>
                 <option>Full Body Massage</option>
@@ -100,47 +100,47 @@ export default function Appointment() {
 
             {/* Date */}
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Preferred Date
               </label>
               <input
                 type="date"
                 name="date"
                 required
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
 
             {/* Time */}
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Preferred Time
               </label>
               <input
                 type="time"
                 name="time"
                 required
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
 
             {/* Message */}
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Additional Message (optional)
               </label>
               <textarea
                 name="message"
                 rows="4"
                 placeholder="Any specific requirement or message"
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               ></textarea>
             </div>
 
             {/* Submit */}
             <button
               type="submit"
-              className="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 rounded-md transition"
+              className="w-full bg-gold-500 hover:bg-gold-600 text-black font-semibold py-3 rounded-md transition shadow-gold"
             >
               Book Appointment
             </button>

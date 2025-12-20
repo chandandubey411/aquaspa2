@@ -28,7 +28,7 @@ export default function Service() {
             {massages.map((item) => (
               <div
                 key={item.slug}
-                className="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+                className="bg-white rounded-xl shadow-sm hover:shadow-xl transition overflow-hidden border border-gold-100"
               >
                 <img
                   src={item.coverImage}
@@ -45,14 +45,20 @@ export default function Service() {
                     {item.description}
                   </p>
 
-                  <div className="mt-4 text-sm text-gray-700">
-                    <p><b>Duration:</b> {item.duration}</p>
-                    <p><b>Price:</b> {item.price}</p>
+                  <div className="mt-4 text-sm text-gray-700 space-y-1">
+                    <p>
+                      <b className="text-gold-600">Duration:</b>{" "}
+                      {item.duration}
+                    </p>
+                    <p>
+                      <b className="text-gold-600">Price:</b>{" "}
+                      {item.price}
+                    </p>
                   </div>
 
                   <Link
                     to={`/massage/${item.slug}`}
-                    className="inline-block mt-5 bg-pink-600 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-pink-700"
+                    className="inline-block mt-5 bg-gold-500 hover:bg-gold-600 text-black px-5 py-2 rounded-md text-sm font-semibold transition shadow-gold"
                   >
                     View Details
                   </Link>
@@ -72,7 +78,7 @@ export default function Service() {
             {spas.map((item) => (
               <div
                 key={item.slug}
-                className="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+                className="bg-white rounded-xl shadow-sm hover:shadow-xl transition overflow-hidden border border-gold-100"
               >
                 <img
                   src={item.coverImage}
@@ -89,14 +95,20 @@ export default function Service() {
                     {item.description}
                   </p>
 
-                  <div className="mt-4 text-sm text-gray-700">
-                    <p><b>Duration:</b> {item.duration}</p>
-                    <p><b>Price:</b> {item.price}</p>
+                  <div className="mt-4 text-sm text-gray-700 space-y-1">
+                    <p>
+                      <b className="text-gold-600">Duration:</b>{" "}
+                      {item.duration}
+                    </p>
+                    <p>
+                      <b className="text-gold-600">Price:</b>{" "}
+                      {item.price}
+                    </p>
                   </div>
 
                   <Link
                     to={`/spa/${item.slug}`}
-                    className="inline-block mt-5 bg-pink-600 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-pink-700"
+                    className="inline-block mt-5 bg-gold-500 hover:bg-gold-600 text-black px-5 py-2 rounded-md text-sm font-semibold transition shadow-gold"
                   >
                     View Details
                   </Link>

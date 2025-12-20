@@ -17,7 +17,7 @@ function App() {
       {/* Navbar fixed hai isliye top padding */}
       <Navbar />
 
-      <main className="pt-[90px]">
+      <main className="pt-[0px]">
         <Routes>
           <Route path="/" element={<><Home /><About /><Service /><Contact /><Appointment /></>} />
           <Route path="/about" element={<About />} />

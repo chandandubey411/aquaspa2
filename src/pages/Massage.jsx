@@ -32,12 +32,16 @@ export default function Massage() {
             </p>
 
             <div className="mt-6 space-y-2 text-gray-700">
-              <p><b>Duration:</b> {massage.duration}</p>
-              <p><b>Price:</b> {massage.price}</p>
+              <p>
+                <b className="text-gold-600">Duration:</b> {massage.duration}
+              </p>
+              <p>
+                <b className="text-gold-600">Price:</b> {massage.price}
+              </p>
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-xl">
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-gold-100">
             <img
               src={massage.coverImage}
               alt={massage.title}
@@ -56,15 +60,16 @@ export default function Massage() {
             {massage.benefits.map((benefit, i) => (
               <li
                 key={i}
-                className="bg-white p-5 rounded-xl shadow text-gray-700"
+                className="bg-white p-5 rounded-xl shadow-sm border border-gold-100 text-gray-700 flex gap-2"
               >
-                ✔ {benefit}
+                <span className="text-gold-500 font-bold">✔</span>
+                <span>{benefit}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* THERAPIST / GIRLS GALLERY */}
+        {/* THERAPIST / GALLERY */}
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Our Therapists
@@ -74,7 +79,7 @@ export default function Massage() {
             {massage.gallery.map((img, i) => (
               <div
                 key={i}
-                className="rounded-xl overflow-hidden shadow hover:scale-105 transition"
+                className="rounded-xl overflow-hidden shadow-md border border-gold-100 hover:scale-105 transition duration-300"
               >
                 <img
                   src={img}

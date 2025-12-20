@@ -24,7 +24,7 @@ export default function Contact() {
               <p className="font-semibold">Phone</p>
               <a
                 href="tel:8882020308"
-                className="text-pink-600 hover:underline"
+                className="text-gold-600 hover:underline"
               >
                 8882020308
               </a>
@@ -34,7 +34,7 @@ export default function Contact() {
               <p className="font-semibold">Email</p>
               <a
                 href="mailto:aquaspapaschimvihareast@gmail.com"
-                className="text-pink-600 hover:underline"
+                className="text-gold-600 hover:underline break-all"
               >
                 aquaspapaschimvihareast@gmail.com
               </a>
@@ -44,7 +44,7 @@ export default function Contact() {
               <p className="font-semibold">Address</p>
               <p>
                 First Floor, 84, Opp. Metro Pillar Number 224,
-Avtar Enclave,  <br />
+                Avtar Enclave, <br />
                 Paschim Vihar, Delhi, 110063
               </p>
             </div>
@@ -52,7 +52,7 @@ Avtar Enclave,  <br />
         </div>
 
         {/* RIGHT : CONTACT FORM */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 border border-gold-100">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Send Us a Message
           </h2>
@@ -69,68 +69,67 @@ Avtar Enclave,  <br />
               value="4c31e106-ed27-43ec-9811-03a496832d22"
             />
 
-            {/* Redirect optional */}
             <input
               type="hidden"
               name="subject"
-              value="New Contact Form Submission - Heaven Retreat Spa"
+              value="New Contact Form Submission - Aqua Spa"
             />
 
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Full Name
               </label>
               <input
                 type="text"
                 name="name"
                 required
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
                 placeholder="Your name"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Phone Number
               </label>
               <input
                 type="tel"
                 name="phone"
                 required
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
                 placeholder="Your phone number"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
                 required
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
                 placeholder="Your email"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <label className="block text-sm font-medium mb-1 text-gray-700">
                 Message
               </label>
               <textarea
                 name="message"
                 rows="4"
                 required
-                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"
                 placeholder="Write your message"
+                className="w-full border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gold-500"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 rounded-md transition"
+              className="w-full bg-gold-500 hover:bg-gold-600 text-black font-semibold py-3 rounded-md transition shadow-gold"
             >
               Send Message
             </button>
