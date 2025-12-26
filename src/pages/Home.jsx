@@ -18,7 +18,7 @@ export default function Home() {
           </span>
 
           <h1 className="mt-4 text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-            Aqua <span className="text-gold-600">Spa</span>
+            AQUA LUXURY <span className="text-gold-600">SPA</span>
           </h1>
 
           <p className="mt-6 text-gray-600 text-lg leading-relaxed max-w-xl">
@@ -38,7 +38,7 @@ export default function Home() {
 
             {/* Secondary CTA */}
             <a
-              href="tel:8882020308"
+              href="tel:9999276535"
               className="border-2 border-gold-500 text-gold-700 px-8 py-3 rounded-lg font-bold hover:bg-gold-500 hover:text-black hover:-translate-y-[2px] transition-all"
             >
               Call Now

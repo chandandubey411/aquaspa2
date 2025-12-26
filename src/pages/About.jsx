@@ -9,7 +9,7 @@ export default function About() {
             About Us
           </span>
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            Aqua Spa
+            AQUA LUXURY SPA
           </h1>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
             A place where luxury meets relaxation and wellness.
@@ -26,7 +26,7 @@ export default function About() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Aqua Spa is a premium wellness destination created to offer
+              AQUA LUXURY SPA is a premium wellness destination created to offer
               complete relaxation of body, mind, and soul. Our spa is designed
               with a calm and luxurious environment where you can escape from
               daily stress and experience true rejuvenation.

@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <h2 className="text-xl font-serif tracking-wide text-gold-500 mb-4">
-            HEAVEN RETREAT SPA
+            AQUA LUXURY SPA
           </h2>
           <p className="text-sm leading-relaxed text-spaGray-400">
             Experience premium relaxation and rejuvenation with our professional
@@ -63,19 +63,19 @@ export default function Footer() {
             <li>
               📞{" "}
               <a
-                href="tel:9217068916"
+                href="tel:9999276535"
                 className="hover:text-gold-400 transition"
               >
-                9217068916
+                 9999276535
               </a>
             </li>
             <li>
               ✉️{" "}
               <a
-                href="mailto:rtheaven76@gmail.com"
+                href="mailto:info@aquaspa.in"
                 className="hover:text-gold-400 transition break-all"
               >
-                rtheaven76@gmail.com
+                info@aquaspa.in
               </a>
             </li>
           </ul>
@@ -85,7 +85,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-spaBlack-700">
         <div className="max-w-7xl mx-auto px-6 py-4 text-center text-sm text-spaGray-500">
-          © {new Date().getFullYear()} Heaven Retreat Spa. All rights reserved.
+          © {new Date().getFullYear()} AQUA LUXURY SPA. All rights reserved.
         </div>
       </div>
     </footer>

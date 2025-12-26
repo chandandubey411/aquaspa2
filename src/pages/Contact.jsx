@@ -17,7 +17,7 @@ export default function Contact() {
           <div className="space-y-5 text-gray-800">
             <div>
               <p className="font-semibold">Business Name</p>
-              <p>Aqua Spa</p>
+              <p>AQUA LUXURY SPA</p>
             </div>
 
             <div>
@@ -26,17 +26,17 @@ export default function Contact() {
                 href="tel:8882020308"
                 className="text-gold-600 hover:underline"
               >
-                8882020308
+                9999276535
               </a>
             </div>
 
             <div>
               <p className="font-semibold">Email</p>
               <a
-                href="mailto:aquaspapaschimvihareast@gmail.com"
+                href="mailto:info@aquaspa.in"
                 className="text-gold-600 hover:underline break-all"
               >
-                aquaspapaschimvihareast@gmail.com
+                info@aquaspa.in
               </a>
             </div>
 

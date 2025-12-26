@@ -35,12 +35,12 @@ export default function Navbar() {
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-3 group">
           <div className="h-14 w-14 flex items-center justify-center rounded-full bg-black shadow-lg ring-1 ring-gold-500/70 transition group-hover:scale-105">
-            <img src={logo} alt="Aqua Spa" className="h-10 w-10" />
+            <img src={logo} alt="AQUA LUXURY SPA" className="h-10 w-10" />
           </div>
 
           <div className="hidden sm:block leading-tight">
             <p className="text-lg font-serif tracking-wide text-gold-500">
-              AQUA SPA
+              AQUA LUXURY SPA
             </p>
             <p className="text-[11px] uppercase tracking-[0.25em] text-gray-500">
               Luxury Wellness
@@ -100,7 +100,7 @@ export default function Navbar() {
           />
 
           <a
-            href="https://wa.me/918882020308"
+            href="https://wa.me/919999276535"
             target="_blank"
             className="hover:text-gold-500"
           >
@@ -140,7 +140,7 @@ export default function Navbar() {
                   <img src={logo} alt="Aqua Spa" className="h-8 w-8" />
                 </div>
                 <span className="font-serif text-lg tracking-wide text-gold-500">
-                  Aqua Spa
+                  AQUA LUXURY SPA
                 </span>
               </div>
               <button className="text-2xl" onClick={() => setMobileOpen(false)}>
