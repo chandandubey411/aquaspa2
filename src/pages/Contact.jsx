@@ -43,8 +43,8 @@ export default function Contact() {
             <div>
               <p className="font-semibold">Address</p>
               <p>
-                First Floor, 84, Opp. Metro Pillar Number 224,
-                Avtar Enclave, <br />
+                2nd Floor, Block-B, B-376,  
+                Block B, Meera Bagh, <br />
                 Paschim Vihar, Delhi, 110063
               </p>
             </div>

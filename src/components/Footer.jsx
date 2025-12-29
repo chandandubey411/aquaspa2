@@ -59,7 +59,7 @@ export default function Footer() {
         <div>
           <h3 className="text-gold-500 font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-sm text-spaGray-400">
-            <li>📍 Shop No - 19, LG, Noida Sector 76</li>
+            <li>📍 2nd Floor, Block-B, B-376, Block B, Meera Bagh, Paschim Vihar, Delhi, 110063</li>
             <li>
               📞{" "}
               <a
