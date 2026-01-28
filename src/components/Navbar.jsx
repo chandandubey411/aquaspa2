@@ -40,7 +40,7 @@ export default function Navbar() {
 
           <div className="hidden sm:block leading-tight">
             <p className="text-lg font-serif tracking-wide text-gold-500">
-              AQUA LUXURY SPA
+              AQUA
             </p>
             <p className="text-[11px] uppercase tracking-[0.25em] text-gray-500">
               Luxury Wellness
@@ -140,7 +140,7 @@ export default function Navbar() {
                   <img src={logo} alt="Aqua Spa" className="h-8 w-8" />
                 </div>
                 <span className="font-serif text-lg tracking-wide text-gold-500">
-                  AQUA LUXURY SPA
+                  AQUA
                 </span>
               </div>
               <button className="text-2xl" onClick={() => setMobileOpen(false)}>

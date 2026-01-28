@@ -18,7 +18,7 @@ export default function Home() {
           </span>
 
           <h1 className="mt-4 text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-            AQUA LUXURY <span className="text-gold-600">SPA</span>
+            AQUA
           </h1>
 
           <p className="mt-6 text-gray-600 text-lg leading-relaxed max-w-xl">

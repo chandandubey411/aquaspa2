@@ -17,7 +17,7 @@ export default function Contact() {
           <div className="space-y-5 text-gray-800">
             <div>
               <p className="font-semibold">Business Name</p>
-              <p>AQUA LUXURY SPA</p>
+              <p>AQUA</p>
             </div>
 
             <div>

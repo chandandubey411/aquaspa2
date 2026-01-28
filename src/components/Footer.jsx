@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <h2 className="text-xl font-serif tracking-wide text-gold-500 mb-4">
-            AQUA LUXURY SPA
+            AQUA
           </h2>
           <p className="text-sm leading-relaxed text-spaGray-400">
             Experience premium relaxation and rejuvenation with our professional
@@ -85,7 +85,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-spaBlack-700">
         <div className="max-w-7xl mx-auto px-6 py-4 text-center text-sm text-spaGray-500">
-          © {new Date().getFullYear()} AQUA LUXURY SPA. All rights reserved.
+          © {new Date().getFullYear()} AQUA. All rights reserved.
         </div>
       </div>
     </footer>
